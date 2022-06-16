@@ -9,3 +9,5 @@ tasks:
 vscode:
   extensions:
     - bbenoist.Nix
+    - mkhl.direnv
+    - matklad.rust-analyzer

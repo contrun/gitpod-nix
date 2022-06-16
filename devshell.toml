@@ -1,0 +1,3 @@
+[devshell]
+name = "rust-devshell"
+packages = ["rustc", "rls", "rustfmt", "rust-analyzer", "cargo"]

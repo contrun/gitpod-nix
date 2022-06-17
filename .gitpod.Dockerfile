@@ -33,4 +33,8 @@ RUN . /home/gitpod/.nix-profile/etc/profile.d/nix.sh \
 # Install direnv
 RUN . /home/gitpod/.nix-profile/etc/profile.d/nix.sh \
   && nix-env -i direnv \
-  && direnv hook bash >> /home/gitpod/.bashrc
+  && direnv hook bash >> /home/gitpod/.bashrc \
+  && echo 'direnv allow' >> /home/gitpod/.bashrc
+
+# Setup Nix
+RUN echo 'experimental-features = nix-command flakes' >> /home/gitpod/.config/nix/nix.conf

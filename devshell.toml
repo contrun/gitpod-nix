@@ -1,3 +1,15 @@
 [devshell]
 name = "rust-devshell"
-packages = ["rustc", "rls", "rustfmt", "rust-analyzer", "cargo"]
+packages = ["rustup", "rust-analyzer"]
+
+[[env]]
+name = "PATH"
+eval = "$PATH:/home/$USER/.cargo/bin"
+
+[[commands]]
+name = "rsinit"
+help = "Install gnu toolchain; Add wasm32 target."
+command = """
+    rustup toolchain install stable-x86_64-gnu
+    rustup target add wasm32-unknown-unknown
+"""

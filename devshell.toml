@@ -1,15 +1,22 @@
 [devshell]
-name = "rust-devshell"
-packages = ["rustup", "rust-analyzer"]
-
-[[env]]
-name = "PATH"
-eval = "$PATH:/home/$USER/.cargo/bin"
+packages = [
+    "alejandra",
+    "dprint",
+    "rust-analyzer-nightly",
+]
 
 [[commands]]
-name = "rsinit"
-help = "Install gnu toolchain; Add wasm32 target."
-command = """
-    rustup toolchain install stable-x86_64-gnu
-    rustup target add wasm32-unknown-unknown
-"""
+package = "treefmt"
+category = "formatter"
+
+[[commands]]
+package = "rustWithComponents"
+name = "cargo"
+help = "manage dependencies and the full build cycle of rust programs"
+category = "devtools"
+
+[[commands]]
+package = "rustWithComponents"
+name = "rustc"
+help = "the rust compiler"
+category = "devtools"

@@ -1,6 +1,6 @@
-# A Nix Flake Template on Gitpod 
+# Gitpod Nix
 
-🦀 Nix development environment with flake enabled. 
+❄ Nix development environment with flake. 
 
 ## Setup
 

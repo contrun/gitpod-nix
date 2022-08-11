@@ -3,6 +3,10 @@ image:
 
 vscode:
   extensions:
-    - bbenoist.Nix
     - mkhl.direnv
+    - bbenoist.Nix
+    - jnoortheen.nix-ide
+    - kamadorueda.alejandra
     - matklad.rust-analyzer
+    - PKief.material-icon-theme
+    - tamasfe.even-better-toml

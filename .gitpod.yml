@@ -7,6 +7,6 @@ vscode:
     - bbenoist.Nix
     - jnoortheen.nix-ide
     - kamadorueda.alejandra
-    - matklad.rust-analyzer
+    - rust-lang.rust-analyzer
     - PKief.material-icon-theme
     - tamasfe.even-better-toml

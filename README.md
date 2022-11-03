@@ -1,6 +1,6 @@
 # Gitpod Nix
 
-❄ Nix development environment with flake. 
+❄ Nix development environment with flake.
 
 ## Setup
 

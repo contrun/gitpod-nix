@@ -28,14 +28,20 @@
           overlays = [
             devshell.overlay
             fenix.overlay
-            (final: prev: {
-              rustWithComponents = prev.fenix.complete.withComponents [
-                "cargo"
-                "clippy"
-                "rust-src"
-                "rustc"
-                "rustfmt"
-              ];
+            (final: prev: rec {
+              toolchain = with prev.fenix;
+                combine [
+                  (complete.withComponents
+                    [
+                      "cargo"
+                      "clippy"
+                      "rust-src"
+                      "rustc"
+                      "rustfmt"
+                    ])
+                  targets.wasm32-unknown-unknown.latest.rust-std
+                  targets.x86_64-pc-windows-gnu.latest.rust-std
+                ];
             })
           ];
         };

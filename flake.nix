@@ -27,7 +27,7 @@
           inherit system;
           overlays = [
             devshell.overlay
-            fenix.overlay
+            fenix.overlays.default
             (final: prev: rec {
               toolchain = with prev.fenix;
                 combine [

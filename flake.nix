@@ -51,6 +51,8 @@
             (pkgs.devshell.importTOML ./devshell.toml)
           ];
         };
+
+        legacyPackages = pkgs;
       }
     );
 }

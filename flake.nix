@@ -40,6 +40,7 @@
                       "rustfmt"
                     ])
                   targets.wasm32-unknown-unknown.latest.rust-std
+                  targets.riscv64imac-unknown-none-elf.latest.rust-std
                   targets.x86_64-pc-windows-gnu.latest.rust-std
                 ];
             })

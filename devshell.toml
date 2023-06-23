@@ -20,3 +20,7 @@ package = "toolchain"
 name = "rustc"
 help = "the rust compiler"
 category = "devtools"
+
+[[env]]
+name = "CC_riscv64imac_unknown_none_elf"
+eval = "$(nix build --print-out-paths --no-link .#pkgsCross.riscv64-embedded.stdenv.cc.out)/bin/riscv64-none-elf-gcc"

@@ -1,7 +1,6 @@
 workspaceLocation: "root"
 
-image:
-  file: .gitpod.Dockerfile
+image: "contrun/gitpod-nix"
 
 tasks:
   - name: tailscaled

@@ -33,7 +33,7 @@ tasks:
       if [[ -d "$WORKSPACE_ROOT" ]] && [[ -n "$(ls -A "$WORKSPACE_ROOT")" ]]; then
         echo "$WORKSPACE_ROOT non empty, skipping clone repository."
       else
-        git clone "$GITPOD_WORKSPACE_CONTEXT_URL" "$WORKSPACE_ROOT"
+        git clone --recursive "$GITPOD_WORKSPACE_CONTEXT_URL" "$WORKSPACE_ROOT"
       fi
 
 vscode:
